@@ -61,7 +61,7 @@ const Foother = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full mt-12 gap-4  max-md:flex-col">
+                <div className="flex w-full mt-12 gap-4  max-md:flex-col max-md:px-2">
                     <div className="max-w-[392px] h-[90px] w-full rounded-xl card-discord p-3 flex items-center gap-3 max-md:max-w-[340px]">
                         <Image src="/midias/discord.svg" alt="" width={38} height={30} />
                         <p className="text-white">
