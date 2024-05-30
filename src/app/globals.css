@@ -2,28 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #170d19;
+}
+
+.gradient-button{
+  background: linear-gradient(90deg, #FF01B7 0%, #FF6864 100.01%);
+  box-shadow: 0px -3px 0px 0px #170D1980 inset;
+}
+
+.btn-trade{
+  background: linear-gradient(90deg, #E90083 0%, #FF6864 100.01%);
+}
+
+.gradient-card{
+  background: linear-gradient(96.25deg, rgba(255, 0, 184, 0) 30.23%, rgba(255, 0, 184, 0.25) 92.14%);
+  border: 3px solid;
+border-image-source: linear-gradient(99.93deg, #E90083 0%, #DE3449 100%);
+border-image-slice: 1;
+border-radius: 8px;
+}
+
+.cards-cripto{
+  background: linear-gradient(128.58deg, rgba(0, 0, 0, 0) 63.84%, rgba(204, 149, 215, 0.15) 96.69%);
+}
+.card-sport-hover{
+  background: linear-gradient(129.59deg, #FF01B8 2.58%, #FF6865 95.56%);
+  box-shadow: 0px 8px 40.2px 1px #FF5DA147;
+}
+.card-discord{
+  background: linear-gradient(96.45deg, #E90083 19.95%, #FF6864 115.62%),
+linear-gradient(91.16deg, rgba(255, 140, 184, 0.78) 1%, rgba(255, 148, 187, 0) 29.61%);
+}
+.card-telegram{
+  background: linear-gradient(96.45deg, #34BDC6 19.95%, #299CDC 115.62%);
+}
+.card-x{
+  background: linear-gradient(96.45deg, #0D0B0C 19.95%, #1C1717 115.62%);
+}
+.foother-bottom{
+  background: linear-gradient(270deg, #120B14 0%, #1E1221 100%);
+}
+
+/* .flex-shrink-carrosel .shrink-0{
+  flex-shrink: initial;
+} */
+
+@media (max-width: 768px) {
+  .flex-shrink-carrosel  .overflow-hidden {
+    width: 400px;
+    }
+
+    .btns-carrosel button:nth-child(1){
+      left: 0;
+    }
+    .btns-carrosel button:nth-child(2){
+      right: -76px;
+    }
 }
 
 @layer utilities {
